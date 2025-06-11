@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramola Tour & Travels</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      min-height: 200vh; /* Just to enable scrolling */
+    }
+
+    /* Fixed Navigation Bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fc9c01;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-around;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
+    }
+
+    /* Navigation links */
+    nav a {
+      color: rgb(218, 86, 20);
+      text-decoration: baseline;
+      padding: 10px 15px;
+      font-weight: bold;
+      transition: color 0.3s ease, background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    /* Hover effect */
+    nav a:hover {
+      background-color: #fff;
+      color: #c40876;
+    }
+
+    /* Scrolled state */
+    nav.scrolled {
+      background-color: #4967cc;
+      box-shadow: 0 2px 10px rgba(58, 55, 200, 0.3);
+    }
+
+    /* Dummy content */
+    section {
+      padding: 120px 20px 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Page Content -->
+  <section>
+    <h1>Welcome to the Page</h1>
+    <p>Scroll down to see the navigation bar change style.</p>
+      <p>  hello this is shrishti ramola by your side to help you in transport services with best vehicles available,
+        and services to provide throughout your trip.
+        <P> welcome to the portal for Char Dham Yatra </P>
+
+
+    </p>
+  </section>
+
+  <!-- JavaScript for Scroll Behavior -->
+  <script>
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
